@@ -34,6 +34,7 @@ void setup()
     path = sketchPath(audioName);
     file = new SoundFile(this, path);
     file.play();
+    //
 } //End setup
 //
 void draw() 
