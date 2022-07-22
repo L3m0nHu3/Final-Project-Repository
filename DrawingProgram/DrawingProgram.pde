@@ -10,6 +10,11 @@ float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeigh
 color black=#000000;
 Boolean draw=false;
 //
+ import processing.sound.*;
+ 
+ SoundFile file;
+  String audioName = "/Users/danielhamilton/Documents/GitHub/Final-Project-Repository/Songs Used/Animal Crossing_ New Horizons - Bubblegum K.K..mp3";
+  String path;
 void setup() 
 {
   //Display checker
@@ -25,6 +30,10 @@ void setup()
   drawingDiameter = width*1/100;
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
+  //
+   path = sketchPath(audioName);
+    file = new SoundFile(this, path);
+    file.play();
   
 } //End setup
 //
@@ -33,7 +42,9 @@ void draw()
   //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //Example Circle Drawing Tool
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);;
   fill (black);
-  
+  //
+  //Eraser
+  if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);;
 } //End draw
 //
 void keyPressed() {
