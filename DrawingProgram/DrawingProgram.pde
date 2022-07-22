@@ -31,10 +31,9 @@ void setup()
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
-   path = sketchPath(audioName);
+    path = sketchPath(audioName);
     file = new SoundFile(this, path);
     file.play();
-  
 } //End setup
 //
 void draw() 
