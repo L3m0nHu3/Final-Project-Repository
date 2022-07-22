@@ -4,17 +4,9 @@ import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
-
-//Global Variables
-float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
-color black=#000000;
-Boolean draw=false;
 //
- import processing.sound.*;
- 
- SoundFile file;
-  String audioName = "/Users/danielhamilton/Documents/GitHub/Final-Project-Repository/Songs Used/Animal Crossing_ New Horizons - Bubblegum K.K..mp3";
-  String path;
+//
+//_~*Setup*~_
 void setup() 
 {
   //Display checker
@@ -31,20 +23,22 @@ void setup()
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
-    path = sketchPath(audioName);
-    file = new SoundFile(this, path);
-    file.play();
-    //
+  path = sketchPath(audioName);
+  file = new SoundFile(this, path);
+  file.play();
+  //
 } //End setup
 //
 void draw() 
 {
   //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //Example Circle Drawing Tool
-  if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);;
+  if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
+  ;
   fill (black);
   //
   //Eraser
-  if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);;
+  if ( draw==true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
+  ;
 } //End draw
 //
 void keyPressed() {
@@ -52,14 +46,13 @@ void keyPressed() {
 //
 void mousePressed() 
 {
- if (mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight) {
-   if ( draw ==true ) {
-   draw=false;
-   } else {
-    draw = true;
-   }
-    
- } //End drawing tools
+  if (mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight) {
+    if ( draw ==true ) {
+      draw=false;
+    } else {
+      draw = true;
+    }
+  } //End drawing tools
 }// End mousePressed
 //
 //End MAIN program
