@@ -12,7 +12,7 @@ void setup()
   //Display checker
   //Display Orientation checker
   //Display and CANVAS checker
-  size(500, 600); //Landscape (Portrait or Square)
+  size(700, 600); //Landscape (Portrait or Square)
   //
   //Population
   drawingSurfaceX = width*0;
@@ -27,18 +27,23 @@ void setup()
   file = new SoundFile(this, path);
   file.play();
   //
+  //---------Menu---------
+  rect(menX, menY, menWidth, menHeight);
 } //End setup
 //
 void draw() 
 {
+  noStroke();
   //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //Example Circle Drawing Tool
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
-  ;
   fill (black);
   //
   //Eraser
   if ( draw==true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
-  ;
+  //
+  //---------Menu Draw---------
+  //rect();
+   
 } //End draw
 //
 void keyPressed() {
