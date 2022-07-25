@@ -39,8 +39,10 @@ void draw()
   if ( draw==true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
   //
   //---------Menu Draw---------
+  fill (grey);
   rect(menX, menY, menW, menH);
-  fill (gray); 
+  stroke(1);
+  fill (resetWhite); 
 } //End draw
 //
 void keyPressed() {

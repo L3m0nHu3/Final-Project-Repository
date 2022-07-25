@@ -10,7 +10,7 @@ String audioName = "/Users/danielhamilton/Documents/GitHub/Final-Project-Reposit
 String path;
 //
 //---------Colours---------
-color red=#FF5D5D, orange=#FFBE5D, yellow=#FFEF5D, green=#FFEF5D, blue=#5D63FF, purple=#C65DFF, black=#000000, white=#FFFFFF, gray=#B2B2B2;
+color red=#FF5D5D, orange=#FFBE5D, yellow=#FFEF5D, green=#FFEF5D, blue=#5D63FF, purple=#C65DFF, black=#000000, white=#FFFFFF, grey=#B2B2B2, resetWhite=#FFFFFF;
 //
 
 //---------Menu---------
