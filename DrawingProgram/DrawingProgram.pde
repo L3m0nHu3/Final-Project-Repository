@@ -5,8 +5,6 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
-//
-//_~*Setup*~_
 void setup() 
 {
   //Display checker
@@ -31,6 +29,7 @@ void setup()
   rect(menX, menY, menWidth, menHeight);
 } //End setup
 //
+//
 void draw() 
 {
   noStroke();
@@ -42,8 +41,8 @@ void draw()
   if ( draw==true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
   //
   //---------Menu Draw---------
-  //rect();
-   
+  rect(menX, menY, menWidth, menHeight);
+  fill (gray); 
 } //End draw
 //
 void keyPressed() {
