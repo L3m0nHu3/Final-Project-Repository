@@ -10,23 +10,21 @@ void setup()
   //Display checker
   //Display Orientation checker
   //Display and CANVAS checker
-  size(700, 600); //Landscape (Portrait or Square)
+  size(900,785); //Landscape (Portrait or Square)
   //
   //Population
   drawingSurfaceX = width*0;
   drawingSurfaceY = height*0;
-  drawingSurfaceWidth = width*3/4; 
-  drawingSurfaceHeight = height*4/5;
+  drawingSurfaceWidth = width*1; 
+  drawingSurfaceHeight = height*3/5;
   drawingDiameter = width*1/100;
+  menX = width*0;
+  menY = height*-1;
+  menW = width*1;
+  menH = height*1/4;
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
-  path = sketchPath(audioName);
-  file = new SoundFile(this, path);
-  file.play();
-  //
-  //---------Menu---------
-  rect(menX, menY, menWidth, menHeight);
 } //End setup
 //
 //
@@ -41,7 +39,7 @@ void draw()
   if ( draw==true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
   //
   //---------Menu Draw---------
-  rect(menX, menY, menWidth, menHeight);
+  rect(menX, menY, menW, menH);
   fill (gray); 
 } //End draw
 //
