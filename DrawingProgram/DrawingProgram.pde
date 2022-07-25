@@ -21,7 +21,7 @@ void setup()
   menX = width*0;
   menY = height*5/7;
   menW = width*1;
-  menH = height*2/10;
+  menH = height*2/6;
   menBtX1 = width*0;
   menBtY1 = height*5/7;
   menBtW1 = width*2/7;
@@ -41,7 +41,10 @@ void setup()
   
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
-  
+  //
+  String[] fontList = PFont.list(); 
+  printArray(fontList);
+  Button1Font = createFont("TimesNewRomanPSMT", 50);
   //
 } //End setup
 //

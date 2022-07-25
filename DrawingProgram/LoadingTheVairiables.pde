@@ -20,3 +20,8 @@ float menBtW3, menBtH3, menBtX3, menBtY3;
 float menBtX4, menBtY4, menBtW4, menBtH4;
 float sideMenWidth, sideMenHeight;
 //
+//---------Text---------
+//Button1
+String Button1 = "Colour Selector";
+PFont Button1Font;
+int Button1Size;
