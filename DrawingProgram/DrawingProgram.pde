@@ -19,7 +19,7 @@ void setup()
   drawingSurfaceHeight = height*3/5;
   drawingDiameter = width*1/100;
   menX = width*0;
-  menY = height*-1;
+  menY = height*1/10;
   menW = width*1;
   menH = height*1/4;
   //
