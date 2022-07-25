@@ -21,7 +21,23 @@ void setup()
   menX = width*0;
   menY = height*5/7;
   menW = width*1;
-  menH = height*2/6;
+  menH = height*2/10;
+  menBtX1 = width*0;
+  menBtY1 = height*5/7;
+  menBtW1 = width*2/7;
+  menBtH1 = height*2/6;
+  menBtX2 = width*1/4;
+  menBtY2 = height*5/7;
+  menBtW2 = width*2/7;
+  menBtH2 = height*2/6;
+  menBtX3 = width*1/2;
+  menBtY3 = height*5/7;
+  menBtW3 = width*2/7;
+  menBtH3 = height*2/6;
+  menBtX4 = width*6/8;
+  menBtY4 = height*5/7;
+  menBtW4 = width*2/7; 
+  menBtH4 = height*2/6;
   
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
@@ -39,7 +55,19 @@ if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSur
   fill (white);
   rect(menX, menY, menW, menH); 
   // - Menu Buttons
-  rect(menBtX, menBtY, menBtnW, menBtH);  
+  //- Button 1
+  fill (white);
+  rect(menBtX1, menBtY1, menBtW1, menBtH1);
+  //- Button 2
+  fill (white);
+  rect(menBtX2, menBtY2, menBtW2, menBtH2);
+  //- Button 3
+  fill (white);
+  rect(menBtX3, menBtY3, menBtW3, menBtH3);
+  //- Button 4
+  fill (white);
+  rect(menBtX4, menBtY4, menBtW4, menBtH4);
+  
   
 } //End draw
 //

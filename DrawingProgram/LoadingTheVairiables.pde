@@ -14,6 +14,9 @@ color red=#FF5D5D, orange=#FFBE5D, yellow=#FFEF5D, green=#FFEF5D, blue=#5D63FF, 
 
 //---------Menu---------
 float menX, menY, menW, menH;
-float menBtnW, menBtH, menBtX, menBtY;
+float menBtW1, menBtH1, menBtX1, menBtY1;
+float menBtW2, menBtH2, menBtX2, menBtY2;
+float menBtW3, menBtH3, menBtX3, menBtY3;
+float menBtX4, menBtY4, menBtW4, menBtH4;
 float sideMenWidth, sideMenHeight;
 //
