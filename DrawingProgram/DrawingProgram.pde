@@ -37,6 +37,9 @@ if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSur
   //---------Menu Draw---------
   fill (white);
   rect(menX, menY, menW, menH); 
+  // - Menu Buttons
+  rect(menBtnX
+  
 } //End draw
 //
 void keyPressed() {
