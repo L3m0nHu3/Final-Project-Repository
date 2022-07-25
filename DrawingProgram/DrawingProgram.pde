@@ -22,6 +22,7 @@ void setup()
   menY = height*5/7;
   menW = width*1;
   menH = height*2/6;
+  
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   
@@ -38,7 +39,7 @@ if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSur
   fill (white);
   rect(menX, menY, menW, menH); 
   // - Menu Buttons
-  rect(menBtnX
+  rect(menBtX, menBtY, menBtnW, menBtH);  
   
 } //End draw
 //
