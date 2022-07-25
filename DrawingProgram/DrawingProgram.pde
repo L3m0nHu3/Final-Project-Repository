@@ -16,33 +16,27 @@ void setup()
   drawingSurfaceX = width*0;
   drawingSurfaceY = height*0;
   drawingSurfaceWidth = width*1; 
-  drawingSurfaceHeight = height*3/5;
+  drawingSurfaceHeight = height*4/7;
   drawingDiameter = width*1/100;
   menX = width*0;
-  menY = height*3/4;
+  menY = height*5/7;
   menW = width*1;
-  menH = height*3/4;
+  menH = height*2/6;
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
+  
   //
 } //End setup
 //
 //
 void draw() 
 {
-  noStroke();
   //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //Example Circle Drawing Tool
-  if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
-  fill (black);
-  //
-  //Eraser
-  if ( draw==true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight ) line (mouseX, mouseY, pmouseX, pmouseY);
+if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfaceHeight) line (mouseX, mouseY, pmouseX, pmouseY); 
   //
   //---------Menu Draw---------
-  fill (grey);
-  rect(menX, menY, menW, menH);
-  stroke(1);
-  fill (resetWhite); 
+  fill (white);
+  rect(menX, menY, menW, menH); 
 } //End draw
 //
 void keyPressed() {
@@ -50,8 +44,8 @@ void keyPressed() {
 //
 void mousePressed() 
 {
-  if (mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceHeight) {
-    if ( draw ==true ) {
+  if ( mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfaceHeight ) {
+    if ( draw == true ) {
       draw=false;
     } else {
       draw = true;

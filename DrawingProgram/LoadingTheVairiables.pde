@@ -1,7 +1,6 @@
 //---------Paper---------
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
 Boolean draw=false;
-color BGcolor;
 //
 //---------Background song---------
 import processing.sound.*;
@@ -17,5 +16,3 @@ color red=#FF5D5D, orange=#FFBE5D, yellow=#FFEF5D, green=#FFEF5D, blue=#5D63FF, 
 float menX, menY, menW, menH;
 float menBtnWidth, menBtHeight;
 float sideMenWidth, sideMenHeight;
-
-color menuColor;
