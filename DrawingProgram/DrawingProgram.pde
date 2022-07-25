@@ -70,6 +70,13 @@ if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSur
   //- Button 4
   fill (white);
   rect(menBtX4, menBtY4, menBtW4, menBtH4);
+  //
+  fill(red);
+  textAlign(BOTTOM, LEFT);
+  Button1Size = 25;
+  textFont(Button1Font, Button1Size);
+  text(menBtX1, menBtY1, menBtW1, menBtH1);
+  fill(resetWhite);
   
   
 } //End draw
