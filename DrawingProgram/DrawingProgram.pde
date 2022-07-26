@@ -34,17 +34,20 @@ void setup()
   menBtY3 = height*5/7;
   menBtW3 = width*2/7;
   menBtH3 = height*2/6;
-  menBtX4 = width*6/8;
-  menBtY4 = height*5/7;
-  menBtW4 = width*2/7; 
-  menBtH4 = height*2/6;
-
-  //
+  quitX = width*6/8;
+  quitY = height*5/7;
+  quitW = width*1/7; 
+  quitH = height*2/6;
+  BtnTX = width*0;
+  BtnTY= height*5/7;
+  BtnTW = width*2/7;
+  BtnTH = height*2/6;
+//
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
-  String[] fontList = PFont.list(); 
-  printArray(fontList);
-  Button1Font = createFont("TimesNewRomanPSMT", 25);
+  //String[] fontList = PFont.list(); 
+  //printArray(fontList);
+  //Button1Font = createFont("TimesNewRomanPSMT", 25);
   //
 } //End setup
 //
@@ -68,22 +71,36 @@ void draw()
   fill (white);
   rect(menBtX3, menBtY3, menBtW3, menBtH3);
   //- Button 4
-  fill (white);
-  rect(menBtX4, menBtY4, menBtW4, menBtH4);
+  if (mouseX>quitX && mouseX<quitX+quitW && mouseY>quitY && mouseY<quitY+quitH) {
+    buttonFill = purple;
+  } else {
+    buttonFill = pink;
+  }//End Hover-Over
+  fill(buttonFill); //2-colours to start, rememeber that night mode adds choice
+  rect (quitY, quitX, quitH, quitW);
+  fill(resetButtonColor);
   //
-  fill(purple);
-  textAlign(CENTER, CENTER);
-  Button1Size = 25;
-  textFont(Button1Font, Button1Size);
-  text(menBtX1, menBtY1, menBtW1, menBtH1);
-  fill(resetWhite);
+  //fill (red);
+  //rect (BtnTX, BtnTY, BtnTW, BtnTH);
+  //fill (resetWhite);
+  //
+  //fill(purple);
+  //textAlign(LEFT, BOTTOM);
+  //Button1Size = 25;
+  //textFont(Button1Font, 30);
+  //text(menBtX1, menBtY1, menBtW1, menBtH1);
+  //fill(resetWhite);
+  //
 } //End draw
 //
-void keyPressed() {
+void keyPressed() 
+{
+  if (key=='Q' || key=='q')  exit();
 } //End keyPressed
 //
 void mousePressed() 
 {
+  //---------Drawing---------
   if ( mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfaceHeight ) {
     if ( draw == true ) {
       draw=false;
@@ -91,6 +108,10 @@ void mousePressed()
       draw = true;
     }
   } //End drawing tools
+  //
+  //---------Quit---------
+  if ( mouseX>quitX && mouseX<quitX+quitW && mouseY>quitY && mouseY<quitY+quitH ) exit(); //basic button code
+  //
 }// End mousePressed
 //
 //End MAIN program
