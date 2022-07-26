@@ -61,31 +61,43 @@ void draw()
   fill (white);
   rect(menBtX1, menBtY1, menBtW1, menBtH1);
   //- Button 2
-  fill (white);
-  rect(menBtX2, menBtY2, menBtW2, menBtH2);
+  if (mouseX>menBtX2 && mouseX<menBtX2+menBtW2 && mouseY>menBtY2 && mouseY<menBtY2+menBtH2) {
+    buttonFill = pink;
+  } else {
+    buttonFill = white;
+  }//End Hover-Over
+  fill(buttonFill);
+  rect (menBtX2, menBtY2, menBtW2, menBtH2);
+  fill(resetButtonColor);
   //- Button 3
-  fill (white);
-  rect(menBtX3, menBtY3, menBtW3, menBtH3);
+  if (mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1) {
+    buttonFill = pink;
+  } else {
+    buttonFill = white;
+  }//End Hover-Over
+  fill(buttonFill);
+  rect (menBtX1, menBtY1, menBtW1, menBtH1);
+  fill(resetButtonColor);
   //- Button 4
   if (mouseX>quitX && mouseX<quitX+quitW && mouseY>quitY && mouseY<quitY+quitH) {
-    buttonFill = purple;
-  } else {
     buttonFill = pink;
+  } else {
+    buttonFill = white;
   }//End Hover-Over
   fill(buttonFill);
   rect (quitX, quitY, quitW, quitH);
   fill(resetButtonColor);
   //
-  fill (red);
-  rect (quitTX, quitTY, quitTW, quitTH);
-  fill (resetWhite);
+ // fill (red);
+  //rect (quitTX, quitTY, quitTW, quitTH);
+  //fill (resetWhite);
   //
-  fill(purple);
-  textAlign(RIGHT, BOTTOM);
-  quitSize = 25;
-  textFont(quitFont, 30);
-  text(quitX, quitY, quitW, quitH);
-  fill(resetWhite);
+  //fill(purple);
+  //textAlign(RIGHT, BOTTOM);
+  //quitSize = 25;
+  //textFont(quitFont, 30);
+  //text(quitX, quitY, quitW, quitH);
+  //fill(resetWhite);
   //
 } //End draw
 //
