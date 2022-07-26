@@ -33,8 +33,10 @@ int quitSize;
 float quitTX, quitTY, quitTW, quitTH;
 //Button1
 String Btn1 = "Colour Picker";
-PFont Btn1Font;
-int Btn1Size;
+//Button2
+String Btn2 = "JukeBox";
+//Button2
+String Btn3 = "Background Colour";
 //
 //---------Buttons---------
 float quitX, quitY, quitW, quitH;

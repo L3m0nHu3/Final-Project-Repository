@@ -64,8 +64,8 @@ void setup()
   drpdwn4Y = height*3.99/7;
   drpdwn4W = width*2.25/9;
   drpdwn4H = height*1.32/9;
-  
-//
+
+  //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
   String[] fontList = PFont.list(); 
@@ -85,7 +85,7 @@ void draw()
   rect(menX, menY, menW, menH); 
   // - Menu Buttons
   //- Button 1
- if (mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1) {
+  if (mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1) {
     buttonFill = pink;
   } else {
     buttonFill = white;
@@ -124,19 +124,33 @@ void draw()
   fill (red);
   rect (quitTX, quitTY, quitTW, quitTH);
   fill (resetWhite);
-  //
+  // Quit
   fill(red);
   textAlign(CENTER, CENTER);
   quitSize = 25;
   textFont(quitFont, 30);
   text(quit, quitX, quitY, quitW, quitH);
   fill(resetWhite);
-  //
-   fill(red);
+  //---------Colour Picker---------
+  fill(red);
   textAlign(CENTER, CENTER);
-  Btn1Size = 25;
-  textFont(Btn1Font, 30);
-  text (Btn1, menBtW1, menBtH1, menBtX1, menBtY1);
+  quitSize = 25;
+  textFont(quitFont, 30);
+  text (Btn1, menBtX1, menBtY1, menBtW1, menBtH1);
+  fill(resetWhite);
+  //---------JukeBox---------
+  fill(red);
+  textAlign(CENTER, CENTER);
+  quitSize = 25;
+  textFont(quitFont, 30);
+  text (Btn2, menBtX2, menBtY2, menBtW2, menBtH2);
+  fill(resetWhite);
+  //---------BackGround Colour---------
+  fill(red);
+  textAlign(CENTER, CENTER);
+  quitSize = 25;
+  textFont(quitFont, 30);
+  text (Btn3, menBtX3, menBtY3, menBtW3, menBtH3);
   fill(resetWhite);
   //
 } //End draw
@@ -159,7 +173,7 @@ void mousePressed()
   //
   //---------Color Picker---------
   if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) rect(drpdwn1X, drpdwn1Y, drpdwn1W, drpdwn1H); //basic button code
-//  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) rect(drpdwn1X, drpdwn1Y, drpdwn1W, drpdwn1H); //basic button code
+  //  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) rect(drpdwn1X, drpdwn1Y, drpdwn1W, drpdwn1H); //basic button code
   //
   //---------JukeBox---------
   if ( mouseX>menBtX2 && mouseX<menBtX2+menBtW2 && mouseY>menBtY2 && mouseY<menBtY2+menBtH2 ) rect(drpdwn2X, drpdwn2Y, drpdwn2W, drpdwn2H); //basic button code
@@ -169,7 +183,7 @@ void mousePressed()
   //
   //---------Image Background---------
   if ( mouseX>drpdwn3X && mouseX<drpdwn3X+drpdwn3W && mouseY>drpdwn3Y && mouseY<drpdwn3Y+drpdwn3H ) rect(drpdwn4X, drpdwn4Y, drpdwn4W, drpdwn4H); //basic button code
-  
+
   //
   //---------Quit---------
   if ( mouseX>quitX && mouseX<quitX+quitW && mouseY>quitY && mouseY<quitY+quitH ) exit(); //basic button code
