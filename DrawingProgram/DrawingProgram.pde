@@ -94,16 +94,16 @@ void draw()
   rect (quitX, quitY, quitW, quitH);
   fill(resetButtonColor);
   //
- // fill (red);
-  //rect (quitTX, quitTY, quitTW, quitTH);
-  //fill (resetWhite);
+  fill (red);
+  rect (quitTX, quitTY, quitTW, quitTH);
+  fill (resetWhite);
   //
-  //fill(purple);
-  //textAlign(RIGHT, BOTTOM);
-  //quitSize = 25;
-  //textFont(quitFont, 30);
-  //text(quitX, quitY, quitW, quitH);
-  //fill(resetWhite);
+  fill(purple);
+  textAlign(RIGHT, BOTTOM);
+  quitSize = 25;
+  textFont(quitFont, 30);
+  text(quit, quitX, quitY, quitW, quitH);
+  fill(resetWhite);
   //
 } //End draw
 //
