@@ -34,7 +34,7 @@ void setup()
   menBtY3 = height*5/7;
   menBtW3 = width*2/7;
   menBtH3 = height*2/6;
-  quitX = width*6/8;
+  quitX = width*7/8;
   quitY = height*5/7;
   quitW = width*1/7; 
   quitH = height*2/6;
