@@ -58,8 +58,14 @@ void draw()
   rect(menX, menY, menW, menH); 
   // - Menu Buttons
   //- Button 1
-  fill (white);
-  rect(menBtX1, menBtY1, menBtW1, menBtH1);
+ if (mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1) {
+    buttonFill = pink;
+  } else {
+    buttonFill = white;
+  }//End Hover-Over
+  fill(buttonFill);
+  rect (menBtX1, menBtY1, menBtW1, menBtH1);
+  fill(resetButtonColor);
   //- Button 2
   if (mouseX>menBtX2 && mouseX<menBtX2+menBtW2 && mouseY>menBtY2 && mouseY<menBtY2+menBtH2) {
     buttonFill = pink;
@@ -70,13 +76,13 @@ void draw()
   rect (menBtX2, menBtY2, menBtW2, menBtH2);
   fill(resetButtonColor);
   //- Button 3
-  if (mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1) {
+  if (mouseX>menBtX3 && mouseX<menBtX3+menBtW3 && mouseY>menBtY3 && mouseY<menBtY3+menBtH3) {
     buttonFill = pink;
   } else {
     buttonFill = white;
   }//End Hover-Over
   fill(buttonFill);
-  rect (menBtX1, menBtY1, menBtW1, menBtH1);
+  rect (menBtX3, menBtY3, menBtW3, menBtH3);
   fill(resetButtonColor);
   //- Button 4
   if (mouseX>quitX && mouseX<quitX+quitW && mouseY>quitY && mouseY<quitY+quitH) {
