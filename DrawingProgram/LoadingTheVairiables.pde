@@ -20,13 +20,21 @@ float menBtW2, menBtH2, menBtX2, menBtY2;
 float menBtW3, menBtH3, menBtX3, menBtY3;
 float menBtX4, menBtY4, menBtW4, menBtH4;
 float sideMenWidth, sideMenHeight;
+float drpdwn1X, drpdwn1Y, drpdwn1W, drpdwn1H;
+float drpdwn2X, drpdwn2Y, drpdwn2W, drpdwn2H;
+float drpdwn3X, drpdwn3Y, drpdwn3W, drpdwn3H;
+float drpdwn4X, drpdwn4Y, drpdwn4W, drpdwn4H;
 //
 //---------Text---------
-//Button1
+//Button4
 String quit = "Quit";
 PFont quitFont;
 int quitSize;
 float quitTX, quitTY, quitTW, quitTH;
+//Button1
+String Btn1 = "Colour Picker";
+PFont Btn1Font;
+int Btn1Size;
 //
 //---------Buttons---------
 float quitX, quitY, quitW, quitH;
