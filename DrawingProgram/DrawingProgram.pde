@@ -34,20 +34,16 @@ void setup()
   menBtY3 = height*5/7;
   menBtW3 = width*2/7;
   menBtH3 = height*2/6;
-  quitX = width*7/8;
+  quitX = width*6/8;
   quitY = height*5/7;
-  quitW = width*1/7; 
+  quitW = width*2/7; 
   quitH = height*2/6;
-  BtnTX = width*0;
-  BtnTY= height*5/7;
-  BtnTW = width*2/7;
-  BtnTH = height*2/6;
 //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
-  //String[] fontList = PFont.list(); 
-  //printArray(fontList);
-  //Button1Font = createFont("TimesNewRomanPSMT", 25);
+  String[] fontList = PFont.list(); 
+  printArray(fontList);
+  quitFont = createFont("TimesNewRomanPSMT", 25);
   //
 } //End setup
 //
@@ -77,19 +73,19 @@ void draw()
     buttonFill = pink;
   }//End Hover-Over
   fill(buttonFill);
-  rect (quitY, quitX, quitH, quitW);
+  rect (quitX, quitY, quitW, quitH);
   fill(resetButtonColor);
   //
-  //fill (red);
-  //rect (BtnTX, BtnTY, BtnTW, BtnTH);
-  //fill (resetWhite);
+  fill (red);
+  rect (quitTX, quitTY, quitTW, quitTH);
+  fill (resetWhite);
   //
-  //fill(purple);
-  //textAlign(LEFT, BOTTOM);
-  //Button1Size = 25;
-  //textFont(Button1Font, 30);
-  //text(menBtX1, menBtY1, menBtW1, menBtH1);
-  //fill(resetWhite);
+  fill(purple);
+  textAlign(RIGHT, BOTTOM);
+  quitSize = 25;
+  textFont(quitFont, 30);
+  text(quitX, quitY, quitW, quitH);
+  fill(resetWhite);
   //
 } //End draw
 //

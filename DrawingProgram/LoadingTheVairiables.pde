@@ -10,7 +10,7 @@ String path;
 //
 //---------Colours---------
 color red=#FF5D5D, orange=#FFBE5D, yellow=#FFEF5D, green=#FFEF5D, blue=#5D63FF, purple=#C65DFF, black=#000000, white=#FFFFFF, grey=#B2B2B2, resetWhite=#FFFFFF, pink=#FFC4DA;
-color buttonFill=#E3E3E3, resetButtonColor=#FFFFFF;;
+color buttonFill=#000000, resetButtonColor=#FFFFFF;;
 //
 
 //---------Menu---------
@@ -23,10 +23,10 @@ float sideMenWidth, sideMenHeight;
 //
 //---------Text---------
 //Button1
-String Button1 = "Colour Selector";
-PFont Button1Font;
-int Button1Size;
-float BtnTX, BtnTY, BtnTW, BtnTH;
+String quit = "Quit";
+PFont quitFont;
+int quitSize;
+float quitTX, quitTY, quitTW, quitTH;
 //
 //---------Buttons---------
 float quitX, quitY, quitW, quitH;
