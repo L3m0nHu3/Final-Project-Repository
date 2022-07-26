@@ -44,7 +44,7 @@ void setup()
   //
   String[] fontList = PFont.list(); 
   printArray(fontList);
-  Button1Font = createFont("TimesNewRomanPSMT", 50);
+  Button1Font = createFont("TimesNewRomanPSMT", 25);
   //
 } //End setup
 //
