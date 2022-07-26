@@ -10,7 +10,7 @@ void setup()
   //Display checker
   //Display Orientation checker
   //Display and CANVAS checker
-  size(900,785); //Landscape (Portrait or Square)
+  size(900, 785); //Landscape (Portrait or Square)
   //
   //Population
   drawingSurfaceX = width*0;
@@ -38,7 +38,7 @@ void setup()
   menBtY4 = height*5/7;
   menBtW4 = width*2/7; 
   menBtH4 = height*2/6;
-  
+
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
   //
@@ -52,7 +52,7 @@ void setup()
 void draw() 
 {
   //ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //Example Circle Drawing Tool
-if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfaceHeight) line (mouseX, mouseY, pmouseX, pmouseY); 
+  if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfaceHeight) line (mouseX, mouseY, pmouseX, pmouseY); 
   //
   //---------Menu Draw---------
   fill (white);
@@ -61,6 +61,12 @@ if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSur
   //- Button 1
   fill (white);
   rect(menBtX1, menBtY1, menBtW1, menBtH1);
+  fill(purple);
+  textAlign(CENTER, CENTER);
+  Button1Size = 25;
+  textFont(Button1Font, Button1Size);
+  text(menBtX1, menBtY1, menBtW1, menBtH1);
+  fill(resetWhite);
   //- Button 2
   fill (white);
   rect(menBtX2, menBtY2, menBtW2, menBtH2);
@@ -71,14 +77,6 @@ if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSur
   fill (white);
   rect(menBtX4, menBtY4, menBtW4, menBtH4);
   //
-   fill(purple);
-  textAlign(CENTER, CENTER);
-  Button1Size = 25;
-  textFont(Button1Font, Button1Size);
-  text(menBtX1, menBtY1, menBtW1, menBtH1);
-  fill(resetWhite);
-  
-  
 } //End draw
 //
 void keyPressed() {
