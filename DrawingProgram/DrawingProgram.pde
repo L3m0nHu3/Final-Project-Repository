@@ -61,12 +61,6 @@ void draw()
   //- Button 1
   fill (white);
   rect(menBtX1, menBtY1, menBtW1, menBtH1);
-  fill(purple);
-  textAlign(CENTER, CENTER);
-  Button1Size = 25;
-  textFont(Button1Font, Button1Size);
-  text(menBtX1, menBtY1, menBtW1, menBtH1);
-  fill(resetWhite);
   //- Button 2
   fill (white);
   rect(menBtX2, menBtY2, menBtW2, menBtH2);
@@ -77,6 +71,12 @@ void draw()
   fill (white);
   rect(menBtX4, menBtY4, menBtW4, menBtH4);
   //
+  fill(purple);
+  textAlign(CENTER, CENTER);
+  Button1Size = 25;
+  textFont(Button1Font, Button1Size);
+  text(menBtX1, menBtY1, menBtW1, menBtH1);
+  fill(resetWhite);
 } //End draw
 //
 void keyPressed() {
