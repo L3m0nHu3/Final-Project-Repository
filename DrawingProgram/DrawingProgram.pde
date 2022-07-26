@@ -76,7 +76,7 @@ void draw()
   } else {
     buttonFill = pink;
   }//End Hover-Over
-  fill(buttonFill); //2-colours to start, rememeber that night mode adds choice
+  fill(buttonFill);
   rect (quitY, quitX, quitH, quitW);
   fill(resetButtonColor);
   //
