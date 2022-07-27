@@ -64,6 +64,11 @@ void setup()
   drpdwn4Y = height*3.99/7;
   drpdwn4W = width*2.25/9;
   drpdwn4H = height*1.32/9;
+  //Grey Out 1
+  greyOut1X = width*0;
+  greyOut1Y = height*3.99/7;
+  greyOut1W = width*2.25/9;
+  greyOut1H = height*1.32/9;
 
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
@@ -152,6 +157,7 @@ void draw()
   textFont(quitFont, 30);
   text (Btn3, menBtX3, menBtY3, menBtW3, menBtH3);
   fill(resetWhite);
+  //---------Grey Out 1---------
   //
 } //End draw
 //
@@ -173,7 +179,6 @@ void mousePressed()
   //
   //---------Color Picker---------
   if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) rect(drpdwn1X, drpdwn1Y, drpdwn1W, drpdwn1H); //basic button code
-  //  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) rect(drpdwn1X, drpdwn1Y, drpdwn1W, drpdwn1H); //basic button code
   //
   //---------JukeBox---------
   if ( mouseX>menBtX2 && mouseX<menBtX2+menBtW2 && mouseY>menBtY2 && mouseY<menBtY2+menBtH2 ) rect(drpdwn2X, drpdwn2Y, drpdwn2W, drpdwn2H); //basic button code
@@ -183,11 +188,16 @@ void mousePressed()
   //
   //---------Image Background---------
   if ( mouseX>drpdwn3X && mouseX<drpdwn3X+drpdwn3W && mouseY>drpdwn3Y && mouseY<drpdwn3Y+drpdwn3H ) rect(drpdwn4X, drpdwn4Y, drpdwn4W, drpdwn4H); //basic button code
-
   //
   //---------Quit---------
   if ( mouseX>quitX && mouseX<quitX+quitW && mouseY>quitY && mouseY<quitY+quitH ) exit(); //basic button code
   //
+  //---------GreyOut1---------
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) 
+  noStroke();
+  fill (background);
+  rect(greyOut1X, greyOut1Y, greyOut1W, greyOut1H); //basic button code
+  fill (resetWhite);
 }// End mousePressed
 //
 //End MAIN program
