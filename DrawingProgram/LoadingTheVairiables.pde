@@ -46,11 +46,22 @@ String Btn2 = "JukeBox";
 String Btn3 = "Background Colour";
 //
 //---------Buttons---------
+//<Colour Selector>
 float quitX, quitY, quitW, quitH;
-float redX, redY, redW, redH;
-float orangeX, orangeY, orangeW, orangeH;
-float yellowX, yellowY, yellowW, yellowH;
-float greenX, greenY, greenW, greenH;
-float blueX, blueY, blueW, blueH;
-float purpleX, purpleY, purpleW, purpleH;
-float whiteX, whiteY, whiteW, whiteH;
+float red1X, red1Y, red1W, red1H;
+float orange1X, orange1Y, orange1W, orange1H;
+float yellow1X, yellow1Y, yellow1W, yellow1H;
+float green1X, green1Y, green1W, green1H;
+float blue1X, blue1Y, blue1W, blue1H;
+float purple1X, purple1Y, purple1W, purple1H;
+float white1X, white1Y, white1W, white1H;
+float black1X, black1Y, black1W, black1H;
+//<Background Buttons
+float red2X, red2Y, red2W, red2H;
+float orange2X, orange2Y, orange2W, orange2H;
+float yellow2X, yellow2Y, yellow2W, yellow2H;
+float green2X, green2Y, green2W, green2H;
+float blue2X, blue2Y, blue2W, blue2H;
+float purple2X, purple2Y, purple2W, purple2H;
+float white2X, white2Y, white2W, white2H;
+float black2X, black2Y, black2W, black2H;
