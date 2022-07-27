@@ -65,10 +65,36 @@ void setup()
   drpdwn4W = width*2.25/9;
   drpdwn4H = height*1.32/9;
   //Grey Out 1
-  greyOut1X = width*0;
-  greyOut1Y = height*3.99/7;
-  greyOut1W = width*2.25/9;
-  greyOut1H = height*1.32/9;
+  //greyOut1X = width*0;
+  //greyOut1Y = height*3.99/7;
+  //greyOut1W = width*2.25/9;
+  //greyOut1H = height*1.32/9;
+  //---------Colour Picker Buttons---------
+  //Red
+  redX = width*0.03/9;
+  redY = height*4.03/7;
+  redW = width*0.3/9;
+  redH = height*0.3/9;
+  //Orange
+  orangeX = width*0.3/9;
+  orangeY = height*4.03/7;
+  orangeW = width*0.3/9;
+  orangeH = height*0.3/9;
+  //Yellow
+  yellowX = width*0.6/9;
+  yellowY = height*4.03/7;
+  yellowW = width*0.3/9;
+  yellowH = height*0.3/9;
+  //Green
+  greenX = width*0.9/9;
+  greenY = height*4.03/7;
+  greenW = width*0.3/9;
+  greenH = height*0.3/9;
+  //Blue
+  blueX = width*0.9/9;
+  blueY = height*4.03/7;
+  blueW = width*0.3/9;
+  blueH = height*0.3/9;
 
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
@@ -179,6 +205,12 @@ void mousePressed()
   //
   //---------Color Picker---------
   if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) rect(drpdwn1X, drpdwn1Y, drpdwn1W, drpdwn1H); //basic button code
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(red); rect(redX, redY, redW, redH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(orange); rect(orangeX, orangeY, orangeW, orangeH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(yellow); rect(yellowX, yellowY, yellowW, yellowH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(green); rect(greenX, greenY, greenW, greenH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(blue); rect(blueX, blueY, blueW, blueH); //<>//
+
   //
   //---------JukeBox---------
   if ( mouseX>menBtX2 && mouseX<menBtX2+menBtW2 && mouseY>menBtY2 && mouseY<menBtY2+menBtH2 ) rect(drpdwn2X, drpdwn2Y, drpdwn2W, drpdwn2H); //basic button code
@@ -193,11 +225,6 @@ void mousePressed()
   if ( mouseX>quitX && mouseX<quitX+quitW && mouseY>quitY && mouseY<quitY+quitH ) exit(); //basic button code
   //
   //---------GreyOut1---------
-  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) 
-  noStroke();
-  fill (background);
-  rect(greyOut1X, greyOut1Y, greyOut1W, greyOut1H); //basic button code
-  fill (resetWhite);
 }// End mousePressed
 //
 //End MAIN program

@@ -9,7 +9,7 @@ String audioName = "/Users/danielhamilton/Documents/GitHub/Final-Project-Reposit
 String path;
 //
 //---------Colours---------
-color red=#FF5D5D, orange=#FFBE5D, yellow=#FFEF5D, green=#FFEF5D, blue=#5D63FF, purple=#C65DFF, black=#000000, white=#FFFFFF, grey=#B2B2B2, resetWhite=#FFFFFF, pink=#FFC4DA, background=#E0E0E0;
+color red=#FF5D5D, orange=#FFBE5D, yellow=#FFEF5D, green=#90FF8B, blue=#5D63FF, purple=#C65DFF, black=#000000, white=#FFFFFF, grey=#B2B2B2, resetWhite=#FFFFFF, pink=#FFC4DA, background=#E0E0E0;
 color buttonFill=#000000, resetButtonColor=#FFFFFF;;
 //
 
@@ -47,3 +47,8 @@ String Btn3 = "Background Colour";
 //
 //---------Buttons---------
 float quitX, quitY, quitW, quitH;
+float redX, redY, redW, redH;
+float orangeX, orangeY, orangeW, orangeH;
+float yellowX, yellowY, yellowW, yellowH;
+float greenX, greenY, greenW, greenH;
+float blueX, blueY, blueW, blueH;
