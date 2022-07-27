@@ -52,3 +52,5 @@ float orangeX, orangeY, orangeW, orangeH;
 float yellowX, yellowY, yellowW, yellowH;
 float greenX, greenY, greenW, greenH;
 float blueX, blueY, blueW, blueH;
+float purpleX, purpleY, purpleW, purpleH;
+float whiteX, whiteY, whiteW, whiteH;

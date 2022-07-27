@@ -1,4 +1,4 @@
-import ddf.minim.*;
+import ddf.minim.*; //<>//
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
 import ddf.minim.signals.*;
@@ -91,10 +91,20 @@ void setup()
   greenW = width*0.3/9;
   greenH = height*0.3/9;
   //Blue
-  blueX = width*0.9/9;
+  blueX = width*1.2/9;
   blueY = height*4.03/7;
   blueW = width*0.3/9;
   blueH = height*0.3/9;
+  //Purple
+  purpleX = width*1.5/9;
+  purpleY = height*4.03/7;
+  purpleW = width*0.3/9;
+  purpleH = height*0.3/9;
+  //White
+  whiteX = width*1.8/9;
+  whiteY = height*4.03/7;
+  whiteW = width*0.3/9;
+  whiteH = height*0.3/9;
 
   //
   rect( drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
@@ -205,11 +215,20 @@ void mousePressed()
   //
   //---------Color Picker---------
   if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) rect(drpdwn1X, drpdwn1Y, drpdwn1W, drpdwn1H); //basic button code
-  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(red); rect(redX, redY, redW, redH);
-  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(orange); rect(orangeX, orangeY, orangeW, orangeH);
-  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(yellow); rect(yellowX, yellowY, yellowW, yellowH);
-  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(green); rect(greenX, greenY, greenW, greenH);
-  //if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(blue); rect(blueX, blueY, blueW, blueH); //<>//
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(red); 
+  rect(redX, redY, redW, redH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(orange); 
+  rect(orangeX, orangeY, orangeW, orangeH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(yellow); 
+  rect(yellowX, yellowY, yellowW, yellowH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(green); 
+  rect(greenX, greenY, greenW, greenH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(blue); 
+  rect(blueX, blueY, blueW, blueH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(purple); 
+  rect(purpleX, purpleY, purpleW, purpleH);
+  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(white); 
+  rect(whiteX, whiteY, whiteW, whiteH);
 
   //
   //---------JukeBox---------
