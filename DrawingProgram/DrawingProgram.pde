@@ -194,7 +194,6 @@ void mousePressed()
   //
   //---------GreyOut1---------
   if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) 
-  noStroke();
   fill (background);
   rect(greyOut1X, greyOut1Y, greyOut1W, greyOut1H); //basic button code
   fill (resetWhite);
