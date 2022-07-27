@@ -209,7 +209,7 @@ void mousePressed()
   if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(orange); rect(orangeX, orangeY, orangeW, orangeH);
   if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(yellow); rect(yellowX, yellowY, yellowW, yellowH);
   if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(green); rect(greenX, greenY, greenW, greenH);
-  if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(blue); rect(blueX, blueY, blueW, blueH); //<>//
+  //if ( mouseX>menBtX1 && mouseX<menBtX1+menBtW1 && mouseY>menBtY1 && mouseY<menBtY1+menBtH1 ) fill(blue); rect(blueX, blueY, blueW, blueH); //<>//
 
   //
   //---------JukeBox---------
